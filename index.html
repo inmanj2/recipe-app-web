@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <title>Group recipes - share with friends</title>
+    <meta charset="UTF-8">
+    <meta
+            name="description"
+            content="Track your home values"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dropdownHandler.css">
+</head>
+
+<body>
+<header id="topheader2">
+
+    <div id="dropdownDismissBackgroundHeader"></div>
+    <div id="logo">
+        <div id="logoImg">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <p id="logoText">group recipes</p>
+    </div>
+
+    <nav class="nav">
+
+        <ul class="ul" id="topul">
+        </ul>
+
+
+    </nav>
+    <div id="profileDropdown">
+        <div class="profileDropdownLargeRow" id="dropdownProfileRow">
+            <div id="profilePic">
+                <img id="dropdown-profile-pic" src="images/aguy.svg" width="100" height="100" alt="">
+            </div>
+            <p id="loggedInAsLabel">---</p>
+            <div id="largeRowBottomLine"></div>
+        </div>
+
+        <div class="profileDropdownSmallRow" id="dropdownSettingsRow">
+            <div class="profileDropdownIcon" id="dropdownSettingsIcon">
+                <img width="20" height="20" src="images/cog2.svg" alt="check"/>
+            </div>
+            <p class="dropdownSmallRowLabel" id="settingsLabel">Settings</p>
+        </div>
+        <div class="profileDropdownSmallRow" id="dropdownLogoutRow">
+            <div class="profileDropdownIcon" id="dropdownLogoutIcon">
+                <img width="20" height="20" src="images/logout2.svg" alt="check"/>
+            </div>
+            <p class="dropdownSmallRowLabel" id="logOutLabel">Log out</p>
+        </div>
+
+    </div>
+
+</header>
+
+<main id="mainArea">
+    <div id="homeSection1">
+        <div class="sectionLeftWordsDiv1">
+            <div class="sectionLeftTitle1">
+                <div class="sectionLeftTitle1Line">Cook with</div>
+                <div class="sectionLeftTitle1Line">your friends & family</div>
+            </div>
+            <div class="sectionLeftDescr1">Keep all your recipes in one place and share your cooking adventures.
+            </div>
+            <div id="getTheAppButtonsDiv">
+                <div id="iosButton">
+                    <a href="https://apps.apple.com/app/id6743944429" target="_blank">
+                        <img src="images/applebadge.svg" alt="Download on the App Store"/>
+                    </a>
+                </div>
+            </div>
+            <div class="sectionLeftButton1" id="enter-button">Go</div>
+            <div class="sectionLeftButton1" id="postButton">Create a free post</div>
+        </div>
+        <div id="section1Image">
+            <img src="./images/A48C3121-7A40-4392-8C08-FE18FA0DDC9B.png" alt="screenshot">
+        </div>
+
+    </div>
+
+
+    <div id="dropdownDismissBackground"></div>
+</main>
+</body>
+
+
+<script src="dropdownHandler.js"></script>
+<script defer type="module" src="index.js"></script>
+</html>

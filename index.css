@@ -1,0 +1,352 @@
+
+#homeSection1 {
+    height: 100vh; /* Replace the existing height:100% */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Add this */
+    justify-content: space-between; /* Add this */
+    padding: 0 5%; /* Add this */
+    position: relative; /* Replace fixed with relative */
+    background: linear-gradient(to bottom, hsl(7, 100%, 100%), hsl(7, 100%, 97%));
+    min-height: 100vh;
+
+}
+
+
+.sectionLeftWordsDiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+    flex: 0 0 40%; /* Replace width:30% with this */
+    z-index: 2;
+    margin-left: 0; /* Replace margin-left:60px */
+    margin-bottom: 0; /* Replace margin-bottom:50px */
+    margin-top: 0; /* Replace margin-top:50px */
+}
+
+
+
+#section1Image {
+    flex: 0 0 55%; /* Replace width:100% with this */
+    z-index: 1;
+    opacity: 87%;
+    height: 100%;
+    border-radius: 20px !important;
+    max-height: 80vh; /* Add this */
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+}
+
+#section1Image img {
+    max-width: 100%; /* Replace object-fit:cover with these */
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px !important; /* Add this */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Add this */
+}
+
+
+#section1Image img:hover {
+    transform: scale(1.02);
+}
+
+
+.sectionLeftTitle1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionLeftTitle1Line {
+    max-width: 100%; /* Replace width:400px and max-width:400px */
+    color: black;
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem; /* Replace 4.0em */
+    line-height: 1.2; /* Add this */
+    white-space: normal; /* Replace nowrap */
+    /*text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);*/ /* Add this */
+}
+
+.sectionLeftDescr1 {
+    width: 100%;
+    color: #5A4A44; /* Replace color */
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem; /* Replace em with rem */
+    line-height: 1.6; /* Replace 28px */
+}
+
+.sectionLeftButton1 {
+    width: auto;
+    height: auto;
+    background-color: hsl(345, 50%, 62%);
+    color: white;
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+    border-radius: 7px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.1s;
+    margin-top: 20px;
+    visibility: hidden;
+    display: none;
+}
+
+.sectionLeftButton1:hover {
+    background-color: hsl(270, 91%, 71%);
+}
+
+#mainArea {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(.01, 1.13, .57, .96);;
+    transform: translateY(50%);
+    filter: blur(5px);
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 400;
+    font-size: 2.0em
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px)
+}
+
+
+#appLogo {
+    transition: all 0.2s;
+    border-radius: 3px;
+    width: 160px;
+    height: 23px;
+}
+
+#appLogo img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#getTheAppBottomBar {
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    left: 0px; /* Add this to ensure it starts from the left edge */
+    right: 0px; /* Add this to ensure it extends to the right edge */
+    z-index: 21;
+    background-color: hsla(215, 0%, 10%, 100%);
+    border-top: 0.5px solid hsl(0,0%,30%);
+    position: fixed;
+}
+
+#getTheAppTitleDiv {
+    margin-left: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+    /* background-color: red; */
+    max-height: 50px;
+    /* width: auto; */
+    width: 250px;
+
+}
+
+#getTheAppButtonsDiv {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+#getTheAppTitle {
+    color: hsl(0, 0%, 90%);
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 50px;
+    max-height: 50px;
+    vertical-align: center;
+    text-overflow: ellipsis;
+}
+
+#getTheAppXButton {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#androidButton {
+    background-color: transparent;
+    width: 135px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#iosButton {
+    background-color: transparent;
+    width: 135px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#iosButton img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+}
+
+#androidButton img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #appLogo {
+        width: 0;
+        opacity: 0;
+    }
+
+    #androidButton, #iosButton {
+        width: 80px;
+    }
+
+    #getTheAppTitleDiv {
+
+        width: 150px;
+
+    }
+
+    #getTheAppTitle {
+        line-height: 25px;
+
+    }
+
+
+    #titleText {
+        font-size: 2.5em
+
+    }
+}
+
+/* For better headline spacing */
+.sectionLeftTitle1Line {
+    margin-bottom: 10px;
+   /* text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.sectionLeftDescr1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #homeSection1 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: auto;
+        padding: 30px 20px 100px;
+        min-height: 100vh;
+    }
+
+    #mainArea {
+        overflow-x: hidden;
+    }
+
+    .sectionLeftWordsDiv1 {
+        width: 90%;
+        margin: 30px auto;
+        margin-bottom: 15px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+
+    .sectionLeftTitle1 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        max-width: none;
+    }
+
+    .sectionLeftTitle1Line {
+        font-size: 2.5rem;
+        width: 100%;
+        max-width: none;
+        white-space: normal;
+        text-align: center;
+        word-wrap: anywhere;
+    }
+
+    #section1Image {
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 350px;
+        margin: 0 auto;
+        height: auto;
+        max-height: 50vh;
+        flex: none;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 10px !important;
+    }
+
+    #section1Image img {
+        border-radius: 10px !important;
+    }
+
+
+    .sectionLeftDescr1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%; /* Prevent text from stretching too wide */
+    }
+}
+
