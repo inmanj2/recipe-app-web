@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     font-family: 'SourceSansPro', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 30px;
     color: hsl(0,0%, 10%);
 }
@@ -45,6 +45,14 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+a {
+    color: hsl(197,87%,48%);
+}
+
+a:hover {
+    color: hsl(197,93%,41%);
 }
 
 footer {
